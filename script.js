@@ -11,3 +11,23 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     alert('Please fill out all fields.');
   }
 });
+
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+// const menuToggle = document.getElementById('menu-toggle');
+
+const hamburgerIcon = document.getElementById('hamburger-icon');
+const closeIcon = document.getElementById('close-icon');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  const isOpen = navLinks.classList.contains('active');
+
+  hamburgerIcon.style.display = isOpen ? 'none' : 'inline-block';
+  closeIcon.style.display = isOpen ? 'inline-block' : 'none';
+});

@@ -188,3 +188,25 @@ footer {
   margin-top: 3rem;
   font-size: 0.95rem;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #1e3a8a, #2563eb);
+    color: #fff;
+    padding: 1.25rem 0.5rem
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+}
