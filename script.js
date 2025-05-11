@@ -1,6 +1,6 @@
 document.getElementById('contactForm').addEventListener('submit', function (e) {
   e.preventDefault();
-  
+
   const name = document.getElementById('name').value.trim();
   const email = document.getElementById('email').value.trim();
   const message = document.getElementById('message').value.trim();
@@ -20,7 +20,7 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
-// const menuToggle = document.getElementById('menu-toggle');
+// const menuToggle = documentriigi.getElementById('menu-toggle');
 
 const hamburgerIcon = document.getElementById('hamburger-icon');
 const closeIcon = document.getElementById('close-icon');
